@@ -7,7 +7,7 @@ var currencyNumber = require('./module2');
 //The first function export should return the result of the first module being passed into
 //the second module.
 
-exports.currencyNumber = currencyNumber(randomNumber(100, 1000000));
+exports.currencyNumber = currencyNumber(randomNumber(100, 100000));
 
 //The second function export should return the text “Account balance: \n”.
 exports.finalResult = function () {return "Account Balance: \n"};

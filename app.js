@@ -8,9 +8,9 @@ http.createServer(function (req, res) {
   res.writeHead(200);
   // create a response body
   //res.write(randomNumber(100, 1000000)); //per Ryan (delete)
-  res.write(currencyNumber(randomNumber(100, 1000000)));
-  res.write(accountBalance.currencyNumber);
+  //res.write(currencyNumber(randomNumber(100, 1000000)));
   res.write(accountBalance.finalResult());//Ryan helped turn this into function
+  res.write(accountBalance.currencyNumber);
 
   // send the response to the client
   res.end();
